@@ -12,13 +12,17 @@
     <param name="global_frame_id" value="map"/>
 
     <!-- Choose initial pose here-->
-    <param name="initial_pose_x" value="0"/>
-    <param name="initial_pose_y" value="0"/>
+    <param name="initial_pose_x" value="2"/>
+    <param name="initial_pose_y" value="-2"/>
+    <param name="initial_pose_a" value="-1.57"/>
+    
+    <param name="laser_z_hit" value="0.7"/>
+    <param name="laser_z_rand" value="1"/>
   </node>
 
   <!--Move_base Node-->
   <node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
-    <remap from="scan" to="my_robot/laser/scan"/>
+    <remap from="scan" to="/scan"/>
     <param name="base_global_planner" value="navfn/NavfnROS"/>
     <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>
     <rosparam file="$(find my_robot)/config/costmap_common_params.yaml" command="load" ns="global_costmap"/>
