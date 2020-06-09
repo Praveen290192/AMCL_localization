@@ -3209,7 +3209,7 @@
           <wrench>-0.771612 -7.26642 19.4366 0 -0 0</wrench>
         </link>
       </model>
-      <model name='office'>
+      <model name='office_1'>
         <pose frame=''>2.50404 -0.340299 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='Wall_27'>
@@ -3482,7 +3482,7 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <model name='office'>
+    <model name='office_2'>
       <pose frame=''>0.577709 2.7439 0 0 -0 0</pose>
       <link name='Wall_27'>
         <pose frame=''>18.275 0.006607 0 0 0 -1.5708</pose>
